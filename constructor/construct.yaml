@@ -1,0 +1,36 @@
+name: ActivityBrowser
+version: 2.6.1
+
+channels:
+  # Ordering of channels indicates preference for package collection.
+  - https://repo.anaconda.com/pkgs/main/
+  - https://repo.anaconda.com/pkgs/msys2/ [win]
+  - https://conda.anaconda.org/conda-forge/
+  - https://conda.anaconda.org/cmutel/
+  - https://conda.anaconda.org/bsteubing/
+  - https://conda.anaconda.org/haasad/
+  - https://conda.anaconda.org/pascallesage/
+
+specs:
+  - python >=3.7,<3.8
+  - activity-browser >=2.6
+  - arrow
+  - brightway2 >=2.1.2
+  - bw2io >=0.7.dev1
+  - bw2data >=3.6.1
+  - eidl >=1.2.0
+  - fuzzywuzzy
+  - matplotlib-base >=2.2.2
+  - networkx
+  - pandas >=0.24.1
+  - pyside2 ==5.13.1
+  - seaborn
+  - conda
+  - presamples
+  - salib >=1.1.2
+  - console_shortcut [win]
+  - menuinst [win]
+  - openssl [win]
+
+license_file: ./LICENSE.txt
+welcome_image: ./activitybrowser.png [win]
