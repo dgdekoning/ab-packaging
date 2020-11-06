@@ -29,7 +29,10 @@ without explicitly installing anything.
 
 ### Requirements for building package
 
-- Create a new Conda environment with the latest activity-browser installed AND a version of pyinstaller of 3.6 or greater: `conda create -y -n abbuild python=3.7 activity-browser pyinstaller>3.6`
+- Create a new Conda environment with the latest activity-browser installed AND a version of pyinstaller of 3.6 or greater, for example:
+  ```bash
+  conda create -y -n abbuild -c conda-forge -c defaults -c cmutel -c bsteubing -c haasad -c pascallesage activity-browser "pyinstaller>3.6" python=3.7 matplotlib=3.2
+  ```
 - Activate the new environment with: `conda activate abbuild`
 - Move into the `pyinstaller` folder of this repository.
 - Call pyinstaller to start the build process: `pyinstaller ./activity-browser.spec`
