@@ -1,0 +1,4 @@
+# Ignore build dirs in pyinstaller
+*.pyc
+pyinstaller/build/*
+pyinstaller/dist/*
